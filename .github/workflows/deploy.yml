@@ -21,7 +21,7 @@ jobs:
 
       - name: Print env variables
         env: # Or as an environment variable
-        DATOCMS_PREVIEW_SECRET: ${{ secrets.DATOCMS_PREVIEW_SECRET }}
+          DATOCMS_PREVIEW_SECRET: ${{ secrets.DATOCMS_PREVIEW_SECRET }}
         run: echo "$DATOCMS_PREVIEW_SECRET"
 
       - name: Build my App
