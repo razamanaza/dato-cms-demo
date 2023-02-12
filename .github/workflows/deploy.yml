@@ -23,7 +23,7 @@ jobs:
         run: |
           touch .env.local
           echo DATOCMS_API_TOKEN=${{ secrets.DATOCMS_API_TOKEN }} >> .env.local
-          cat ./env.local
+          cat .env.local
           npm run build && npm run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
