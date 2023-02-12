@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: Print env variables
-        run: echo ${{ secrets.DATOCMS_PREVIEW_SECRET }}
+        run: echo ${{ secrets }}
 
       - name: Build my App
         run: npm run build && npm run export && touch ./out/.nojekyll
